@@ -39,10 +39,10 @@
                         <li><a href="importpurchase.html">Import Purchase</a></li>
                     </ul>
                 </li>
-                <li class="submenu">
-                    <a href="javascript:void(0);"><img src="admin/assets/img/icons/expense1.svg" alt="img"><span> Expense</span> <span class="menu-arrow"></span></a>
+                <li class="submenu active">
+                    <a href="javascript:void(0);"><img src="{{ asset('admin/assets/img/icons/expense1.svg') }}" alt="img"><span> Expense</span> <span class="menu-arrow active"></span></a>
                     <ul>
-                        <li><a href="expenselist.html">Expense List</a></li>
+                        <li><a href="{{ ('/') }}">Expense List</a></li>
                         <li><a href="createexpense.html">Add Expense</a></li>
                         <li><a href="expensecategory.html">Expense Category</a></li>
                     </ul>

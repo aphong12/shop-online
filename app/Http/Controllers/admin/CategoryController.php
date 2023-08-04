@@ -20,7 +20,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = $this->categoryService->getAllCategories(\request()->input('p', 1));
-        return view('admin.layout.layout', ['categories' => $categories]);
+        return view('admin.category.index', ['categories' => $categories]);
     }
 
     /**

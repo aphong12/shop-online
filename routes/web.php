@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\CategoryController;
+use App\Http\Controllers\admin\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +19,8 @@ function set_active( $route ){
     }
     return Request::path() == $route ? 'active' : '';
 }
+
+Route::get('/home',[HomeController::class, 'index'])->name('admin.dashboard.home');
 
 Route::get('/', function () {
     return view('welcome');

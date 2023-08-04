@@ -1,5 +1,5 @@
 @extends('admin.layout.layout')
 
 @section('content')
-    <h1>Categories index</h1>
+   <h1>Trang chu</h1>
 @endsection

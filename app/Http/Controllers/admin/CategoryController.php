@@ -28,7 +28,9 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        $parentCategories = $this->categoryService->getParentCategories();
+
+        return view('admin.category.form', ['parentCategories' => $parentCategories]);
     }
 
     /**
